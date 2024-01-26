@@ -1,0 +1,78 @@
+body {
+	background-color: #b4d4ff;
+}
+
+.main-container {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid black;
+	background-color: white;
+	border-radius: 6px;
+	padding: 20px;
+	width: 55%;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+.change-city {
+	position: relative;
+	padding: 20px 190px 20px 20px;
+}
+
+.city-box {
+	border: 1px solid black;
+	border-radius: 5px;
+	background-color: rgba(230, 230, 230, 0.767);
+	width: 250px;
+	height: 30px;
+	font-family: "Poppins", sans-serif;
+}
+
+.search-button {
+	border: 1px solid #265073;
+	background-color: #176b87;
+	color: white;
+	border-radius: 5px;
+	padding: 6px 10px;
+}
+
+hr {
+	width: 95%;
+}
+
+h1 {
+	font-size: 35px;
+}
+
+.current-weather {
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+	font-family: "Poppins", sans-serif;
+}
+
+.left-info {
+	position: relative;
+}
+
+.right-info {
+	position: relative;
+	top: 50px;
+	font-size: 45px;
+}
+
+.celsius-unit {
+	position: relative;
+	top: -16px;
+	font-size: 20px;
+}
+
+small {
+	font-size: 20px;
+}
+
+footer {
+	padding: 10px;
+	text-align: center;
+	font-family: "Poppins", sans-serif;
+}

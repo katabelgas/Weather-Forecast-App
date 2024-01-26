@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+		<link rel="stylesheet" href="src/style.css" />
+		<title>My weather application</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&family=Open+Sans:wght@300&family=Poppins:ital,wght@0,100;0,300;0,600;0,800;1,300;1,400;1,500;1,700&family=Quicksand:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;1,100&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div class="main-container">
+			<header class="change-city">
+				<form id="city-form">
+					<input
+						type="search"
+						class="city-box"
+						placeholder="Enter a city.."
+						required
+						id="enter-city-input"
+					/>
+					<input type="submit" class="search-button" value="Search" />
+				</form>
+			</header>
+			<hr />
+			<main>
+				<div class="current-weather">
+					<span class="left-info">
+						<h1>Paris</h1>
+						<p>
+							<span id="dayTime">Saturday 15:32</span>,
+							<span id="description">moderate rain</span>
+							<br />
+							Humidity: <strong><span id="humidity">87</span>%</strong> , Wind:
+							<strong><span id="wind-speed">7.2</span>km/h</strong>
+						</p>
+					</span>
+					<span class="right-info">
+						<span id="weather-emoji">☀️</span>
+						<strong>
+							<span id="current-temp">14</span>
+						</strong>
+						<span class="celsius-unit">°C</span>
+					</span>
+				</div>
+			</main>
+			<hr />
+			<footer>
+				<p>
+					This project was coded by
+					<a href="#" target="_blank">Kat Abelgas</a> and is
+					<a href="#" target="_blank"> on GitHub</a> and
+					<a href="#" target="_blank">hosted on Netlify</a>
+				</p>
+			</footer>
+		</div>
+		<script src="src/java.js"></script>
+	</body>
+</html>
