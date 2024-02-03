@@ -1,4 +1,8 @@
 body {
+	background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/113/620/original/Web_BG_wide.png?1706993728);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center bottom;
 	background-color: #b4d4ff;
 }
 
