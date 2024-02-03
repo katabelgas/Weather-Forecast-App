@@ -30,15 +30,7 @@ function displayCityTemp(response) {
 	windElement.innerHTML = windSpeed;
 
 	let emojiElement = document.querySelector("#weather-emoji");
-	if (temperature > 15) {
-		emojiElement.innerHTML = "☀️";
-	} else {
-		if (temperature < 3) {
-			emojiElement.innerHTML = "❄️";
-		} else {
-			emojiElement.innerHTML = "🌤️";
-		}
-	}
+	emojiElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-app-emoji"/>`;
 }
 
 function formatDate(date) {

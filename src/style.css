@@ -57,8 +57,13 @@ h1 {
 
 .right-info {
 	position: relative;
-	top: 50px;
+	top: 30px;
 	font-size: 45px;
+}
+
+.weather-app-emoji {
+	width: 66px;
+	height: 66px;
 }
 
 .celsius-unit {
