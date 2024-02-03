@@ -1,8 +1,9 @@
 body {
-	background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/113/620/original/Web_BG_wide.png?1706993728);
+	background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/113/636/original/bg_vector.png?1706996427);
 	background-size: cover;
+	height: 100vh;
+	width: 100%;
 	background-repeat: no-repeat;
-	background-position: center bottom;
 	background-color: #b4d4ff;
 }
 
@@ -13,7 +14,7 @@ body {
 	background-color: white;
 	border-radius: 6px;
 	padding: 20px;
-	width: 55%;
+	width: 50%;
 	margin: 0 auto;
 	margin-top: 30px;
 }
@@ -33,8 +34,8 @@ body {
 }
 
 .search-button {
-	border: 1px solid #265073;
-	background-color: #176b87;
+	border: 1px solid #6771b4;
+	background-color: #7784d8;
 	color: white;
 	border-radius: 5px;
 	padding: 6px 10px;
