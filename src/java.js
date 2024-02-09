@@ -1,4 +1,7 @@
 function displayCityTemp(response) {
+	let cityName = document.querySelector("h1");
+	cityName.innerHTML = response.data.city;
+
 	let cityTempElement = document.querySelector("#current-temp");
 	let temperature = Math.round(response.data.temperature.current);
 	cityTempElement.innerHTML = temperature;
@@ -52,12 +55,12 @@ function searchCity(event) {
 	event.preventDefault();
 
 	let newCity = document.querySelector("#enter-city-input");
+	search(newCity.value);
+}
 
-	let city = document.querySelector("h1");
-	city.innerHTML = newCity.value;
-
+function search(city) {
 	let apiKey = "00e9ec4a9o03fe4f37c30a5t73eeb81e";
-	let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${newCity.value}&key=${apiKey}&units=metric`;
+	let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
 
 	axios.get(apiUrl).then(displayCityTemp);
 }
@@ -108,4 +111,4 @@ let currentDayTime = new Date();
 
 dayTimeElement.innerHTML = formatDate(currentDayTime);
 
-searchCity("Paris");
+search("Paris");
