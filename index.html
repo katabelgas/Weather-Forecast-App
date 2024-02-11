@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
 		<link rel="stylesheet" href="src/style.css" />
-		<title>Weather App</title>
+		<title>The Cozy Weather App</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -16,11 +16,13 @@
 	<body>
 		<div class="main-container">
 			<header class="change-city">
+				<div class="title"><strong>The Cozy Weather App</strong></div>
+				<br />
 				<form id="city-form">
 					<input
 						type="search"
 						class="city-box"
-						placeholder="Enter a city.."
+						placeholder="Enter a city..."
 						required
 						id="enter-city-input"
 					/>
@@ -32,7 +34,7 @@
 				<div class="current-weather">
 					<div class="left-info">
 						<h1>Paris</h1>
-						<p>
+						<p class="weather-text">
 							<span id="dayTime">Saturday 15:32</span>,
 							<span id="description">moderate rain</span>
 							<br />
